@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/limjinkeong/portfoilo/issues"
   },
-  "homepage": "https://github.com/limjinkeong/portfoilo#readme"
+  "homepage": "https://github.com/limjinkeong/portfoilo#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-serve": "^0.1.6"
+  }
 }
