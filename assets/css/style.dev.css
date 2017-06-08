@@ -1,0 +1,21 @@
+/* line 1, assets\less\common.less */
+html {
+  height: 100%;
+}
+/* line 3, assets\less\common.less */
+html body {
+  margin: 0;
+  height: 100%;
+}
+/* line 1, assets\less\style.less */
+h1 {
+  border: 1px #00F solid;
+}
+/* line 2, assets\less\style.less */
+h2 {
+  border: 1px #00F solid;
+}
+/* line 3, assets\less\style.less */
+h3 {
+  border: 1px #00F solid;
+}
