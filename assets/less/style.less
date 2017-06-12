@@ -1,7 +1,7 @@
 .top{
-    width: 100%; height: 125px; background: #f00;
+    width: 100%; height: 125px; position: relative; border-bottom: 1px solid @maincolor;
     .login{
-        width: 1400px; height: 25px; background: #fff; margin: 0 auto;
+        width: 1400px; height: 25px; margin: 0 auto;
         .login_nav{
             width: 140px; height: 25px; float: right;
             a{
@@ -10,31 +10,75 @@
         }
     }
     .menu{
-        width:1400px; height: 100px; background: #f0f; margin: 0 auto;
+        width:1400px; height: 100px; margin: 0 auto;
         .logo{
             width: 201px; height: 48px; background: url(../../assets/images/logo.png);
             background-color: #fff; float: left; margin-top: 26px;
         }
+        .eco{
+            width: 300px; height: 150px; position: absolute; top: 125px; display: none;
+            .ecostory{
+                width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px;
+                .ecocar{
+                    display: block; text-align: center; padding-top: 7px; font-weight: bold; font-size: 20px; color: @fontcolor;
+                }
+                .story{
+                    display: block; padding-left: 25px; font-size: 16px; color: @fontcolor;
+                }
+            }
+            .ecoinfor{
+                width: 130px; height: 70px;  position: absolute; top: 30px; right: 0;
+                .in{
+                    display: block; font-size: 11px; padding-top: 17px; color: @subcolor;
+                }
+                .for{
+                    display: block; font-size: 11px; color: @subcolor;
+                }
+            }
+        }
         .depth1{
             position: relative;
             .depth1_1{
-                width: 1100px; background: #a9f; position: absolute; top: 40px; right: 0;
+                width: 1100px; position: absolute; top: 40px; right: 0;
                 .depth1_2{
-                    width: 180px;
-                    display: inline-block;
+                    width: 180px; display: inline-block;
                     a .top_nav{
-                        display: block;
-                        text-align: center;
+                        display: block; text-align: center;
                     }
                 }
             }
             .depth2{
-                position: absolute;
-                top: 70px;
-                a span{
-                    display: block;
+                position: relative; display: none;
+                .depth2_1{
+                    width: 185px; position: absolute; top:36px;
+                    .depth2_2{
+                        width: 180px; height: 150px;display: inline-block; margin: 0 auto;
+                        a .bottom_nav{
+                            display: block; text-align: center; margin-top: 15px; color: @subcolor;
+                        }
+                    }
                 }
             }
         }
     }
+}
+@media screen and (max-width:1024px){
+
+}
+
+.slidewrap{
+    width: 100%; height: 100%; position: relative;
+    .main1{
+        width: 100%; height: 100%;
+        .slideinfor{
+            width: 450px; height: 300px; background: #f00; position: absolute; top: 100px; left: 400px;
+            img{
+                width: 223px; height: 223px;
+            }
+        }
+        span{
+            position: absolute; top: 100px; left: 400px; display: block;
+        }
+    }
+
 }

@@ -22,13 +22,13 @@ body {
 .top {
   width: 100%;
   height: 125px;
-  background: #f00;
+  position: relative;
+  border-bottom: 1px solid #80af00;
 }
 /* line 3, assets\less\style.less */
 .top .login {
   width: 1400px;
   height: 25px;
-  background: #fff;
   margin: 0 auto;
 }
 /* line 5, assets\less\style.less */
@@ -48,7 +48,6 @@ body {
 .top .menu {
   width: 1400px;
   height: 100px;
-  background: #f0f;
   margin: 0 auto;
 }
 /* line 14, assets\less\style.less */
@@ -61,33 +60,134 @@ body {
   margin-top: 26px;
 }
 /* line 18, assets\less\style.less */
+.top .menu .eco {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 125px;
+  display: none;
+}
+/* line 20, assets\less\style.less */
+.top .menu .eco .ecostory {
+  width: 130px;
+  height: 70px;
+  background: #80af00;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+/* line 22, assets\less\style.less */
+.top .menu .eco .ecostory .ecocar {
+  display: block;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* line 25, assets\less\style.less */
+.top .menu .eco .ecostory .story {
+  display: block;
+  padding-left: 25px;
+  font-size: 16px;
+  color: #ffffff;
+}
+/* line 29, assets\less\style.less */
+.top .menu .eco .ecoinfor {
+  width: 130px;
+  height: 70px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+/* line 31, assets\less\style.less */
+.top .menu .eco .ecoinfor .in {
+  display: block;
+  font-size: 11px;
+  padding-top: 17px;
+  color: #7a7878;
+}
+/* line 34, assets\less\style.less */
+.top .menu .eco .ecoinfor .for {
+  display: block;
+  font-size: 11px;
+  color: #7a7878;
+}
+/* line 39, assets\less\style.less */
 .top .menu .depth1 {
   position: relative;
 }
-/* line 20, assets\less\style.less */
+/* line 41, assets\less\style.less */
 .top .menu .depth1 .depth1_1 {
   width: 1100px;
-  background: #a9f;
   position: absolute;
   top: 40px;
   right: 0;
 }
-/* line 22, assets\less\style.less */
+/* line 43, assets\less\style.less */
 .top .menu .depth1 .depth1_1 .depth1_2 {
   width: 180px;
   display: inline-block;
 }
-/* line 25, assets\less\style.less */
+/* line 45, assets\less\style.less */
 .top .menu .depth1 .depth1_1 .depth1_2 a .top_nav {
   display: block;
   text-align: center;
 }
-/* line 31, assets\less\style.less */
+/* line 50, assets\less\style.less */
 .top .menu .depth1 .depth2 {
-  position: absolute;
-  top: 70px;
+  position: relative;
+  display: none;
 }
-/* line 34, assets\less\style.less */
-.top .menu .depth1 .depth2 a span {
+/* line 52, assets\less\style.less */
+.top .menu .depth1 .depth2 .depth2_1 {
+  width: 185px;
+  position: absolute;
+  top: 36px;
+}
+/* line 54, assets\less\style.less */
+.top .menu .depth1 .depth2 .depth2_1 .depth2_2 {
+  width: 180px;
+  height: 150px;
+  display: inline-block;
+  margin: 0 auto;
+}
+/* line 56, assets\less\style.less */
+.top .menu .depth1 .depth2 .depth2_1 .depth2_2 a .bottom_nav {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #7a7878;
+}
+/* line 69, assets\less\style.less */
+.slidewrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 71, assets\less\style.less */
+.slidewrap .main1 {
+  width: 100%;
+  height: 100%;
+}
+/* line 73, assets\less\style.less */
+.slidewrap .main1 .slideinfor {
+  width: 450px;
+  height: 300px;
+  background: #f00;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+}
+/* line 75, assets\less\style.less */
+.slidewrap .main1 .slideinfor img {
+  width: 223px;
+  height: 223px;
+}
+/* line 79, assets\less\style.less */
+.slidewrap .main1 span {
+  position: absolute;
+  top: 100px;
+  left: 400px;
   display: block;
 }
