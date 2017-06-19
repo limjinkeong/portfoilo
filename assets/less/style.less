@@ -67,7 +67,8 @@
 
 }
 // nav끝
-// 슬라이드시작
+
+// index 슬라이드시작
 .slidewrap{
     height: 100%; position: relative;
     .main1{
@@ -101,7 +102,8 @@
         }
     }
 }
-// 슬라이드끝
+// index 슬라이드끝
+
 // 효과시작
 .effectwrap{
     width: 100%; height: 100%; margin-top: 30px;
@@ -134,6 +136,7 @@
     }
 }
 // 효과끝
+
 // 차종알아보기시작
 .subsidywrap{
     width: 100%; height: 100%; margin-top: 30px; background: @mainbackground;
@@ -175,6 +178,7 @@
     }
 }
 // 차종알아보기끝
+
 //블로그시작
 .blogwrap{
     width: 100%; height: 100%; margin-top: 30px;
@@ -207,6 +211,7 @@
     }
 }
 //블로그끝
+
 //charging시작
 .chargingwrap{
     width: 100%; height: 100%; margin-top: 30px; background: @mainbackground;
@@ -223,7 +228,7 @@
         }
     }
     .chargingimg{
-        width: 70%; height: 500px; background: #f00; margin: 0 auto; margin-top: 50px;
+        width: 70%; height: 500px; margin: 0 auto; margin-top: 50px; display: block;
         img{
             width: 33%; height: 100%;
         }
@@ -236,9 +241,86 @@
     }
 }
 //charging끝
-// subone 사이드바1 전기차개요 시작
 
-// subone 사이드바1 전기자개요 끝
+// sub 슬라이드 시작
+.subslidewrap{
+    width: 100%; height:500px;
+    li{
+        img{
+            width: 100%; height: 500px;
+        }
+        .subslideinfor{
+            width: 40%; height: 350px; position: absolute; top: 25%;; left: 21%;
+            img{
+                width: 30%; height: 250px;
+            }
+        }
+        .subline1{
+                position: absolute; top: 285px; left: 460px; display: block; font-weight: bold; font-size: 48px; color: @fontcolor;
+        }
+        .subline2{
+            position: absolute; top: 365px; left: 460px; display: block; font-size: 48px; color: @fontcolor;
+        }
+    }
+}
+// sub 슬라이드 끝
+
+//컨텐츠 시작
+.content{
+    width: 1400px; height: 600px;; margin: 0 auto; margin-top: 30px; background: #f00;
+    // subone 사이드바1 전기차소개 시작
+    .sidewrap{
+        width: 180px; height: 600px; background: #f0f; float: left;
+        ul{
+            .side1{
+                width: 180px; height: 70px; background: @maincolor; color: @fontcolor; font-size: 24px; text-align: center;
+                .side1box{
+                    width: 180px; height: 20px;
+                    .topline{
+                        width: 30px; height: 10px; background: @fontcolor; margin: 0 auto; position: relative; top:8px;
+                    }
+                }
+            }
+            .side2{
+                width: 180px; height: 70px;  color: @maincolor; text-align: center; border-bottom: 1px solid @maincolor;
+                a{
+                    font-size: 18px; text-align: center; color: @subcolor; position: relative; top: 20px; display: block;
+                }
+            }
+        }
+    }
+    // subone 사이드바1 전기차소개 끝
+    // subone 사이드바2 전기차소개 시작
+    .side2wrap{
+        width: 1170px; height: 125px; background: #ff0; float: left; margin-left: 50px;
+        h1{
+             width: 585px; height: 50px; color: @subcolor; font-size: 36px; background: #0f0; float: left;
+        }
+        .sidenav{
+             width: 585px; height: 50px; float: left; background: #d4d;
+             p{
+                font-size: 10px; float: right; padding-top: 35px; color: @subcolor;
+             }
+        }
+        .sidedepth3{
+            width: 1170px; height: 75px; background: @maincolor; float: left;
+            p{
+                font-size: 24px; display: inline-block; padding-top: 16px; padding-left: 30px;
+                a{
+                    color: @fontcolor;
+                }
+            }
+    }
+    // subone 사이드바2 전기차소개 끝
+}
+    //콘텐츠 작동원리 시작
+    .content1{
+        width: 1170px; height: 350px;; float: right; background: #c8b; float: left;  margin-left: 50px;
+    }
+    //콘텐츠 작동원리 끝
+}
+// 컨텐츠 끝
+
 //footer시작
 .footer{
     width: 100%; height: 200px; border-top: 1px solid @maincolor;
