@@ -1087,6 +1087,7 @@ body {
 .content .content5 .content5_1 {
   width: 1170px;
   height: 400px;
+  margin-top: 20px;
 }
 /* line 501, assets\less\style.less */
 .content .content5 .content5_1 img {
@@ -1114,10 +1115,11 @@ body {
 }
 /* line 514, assets\less\style.less */
 .content .content5 .origin5 span {
-  float: right;
+  float: left;
   font-size: 12px;
   color: #7a7878;
   padding-top: 10px;
+  padding-left: 50px;
 }
 /* line 530, assets\less\style.less */
 .footer {

@@ -20,6 +20,8 @@ module.exports = function(grunt) {
                     'assets/css/style.min.css': 'assets/less/import.less'
                 }
             },
+
+
             dev: {
                 options: {
                     paths: ['assets/css'],
@@ -37,8 +39,20 @@ module.exports = function(grunt) {
                 tasks: ['less'],
                 options: {
                     spawn: false,
-                },
-            },
+                }
+            }
+        },
+        //인클루드
+        includes:{
+            dist:{
+                cwd:'html',
+                src:['*.html'],
+                dest:'eco_dist',
+                options:{
+                    flatten:true,
+                    includePath:'html'
+                }
+            }
         }
     });
 
@@ -46,6 +60,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-serve');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-includes');
     // Default task(s).
     grunt.registerTask('default', ['serve']);
 
