@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*WebFont*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /* 구글지원 웹폰트 서비스 */
+/*//WebFont*/
+
+/*Common*/
+html{ margin:0;padding:0;overflow-x:hidden;overflow-y:scroll; word-break:break-all; }
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;}
+body,input,textarea,select,button,table{ font-family: 'Nanum Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#2a2a2a; }
+img,fieldset{border:none;}
+ul,ol{list-style:none;}
+em,address{font-style:normal;}
+a{text-decoration:none;color:#2a2a2a;}
+a:hover,a:active,a:focus,a:visited{text-decoration:none;color:#2a2a2a;}
+input{line-height:160%;vertical-align:middle;}
+hr,legend{display:none;}
+label{cursor:pointer;_cursor/**/:hand;}
+button{border:none;background:none;cursor:pointer;_cursor/**/:hand;}
+table{border:0;border-collapse:collapse;}
+caption{display:none;}
+.btnPointer{cursor:pointer;} /* 예약 클래스 */
+/*//Common*/
+
+/*layout*/
+body {_text-align:center;}
+#Wrap{width:auto;margin:0 auto;_text-align:left;}
+
+/*header*/
+#Header{width:auto;}
+.Hta{width:auto;}
+.Gnb{width:auto;}
+.Mnb{width:auto;}
+/*//header*/
+
+/*container*/
+#Container{width:auto;*display:inline-block;}
+#Container:after{display:block;clear:both;content:''}
+
+.Spot{width:auto;float:left;}
+
+#Snb{width:auto;float:left;}
+.nav_login{width:auto;}
+.nav_menu{width:auto;}
+.nav_sec{width:auto;}
+.nav_sec_notice{width:auto;}
+.nav_sec_article{width:auto;}
+.nav_ad{width:auto;}
+.nav_ad_banner01{width:auto;}
+.nav_ad_banner02{width:auto;}
+
+#Content{width:auto;float:left;}
+.Path{width:auto;}
+.Title{width:auto;}
+.sec{width:auto;}
+.sec_notice_list01{width:auto;}
+.sec_notice_list02{width:auto;}
+.sec_notice_paging{width:auto;}
+
+/*//container*/
+
+/*footer*/
+#FWrap{width:100%;text-align:center;clear:both;}
+#Footer{width:auto;text-align:left; margin:0 auto;}
+.foot_ad_banner{width:auto;}
+.foot_menu{width:auto;}
+.foot_copyright{width:auto;}
+.foot_link{width:auto;}
+/*//footer*/
+
+/*//layout*/

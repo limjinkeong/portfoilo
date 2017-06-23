@@ -42,6 +42,13 @@ module.exports = function(grunt) {
                 }
             }
         },
+        includes: {
+            files: ['assets/less/*.less'],
+            tasks: ['includes'],
+            options: {
+                spawn: false,
+            }
+        },
         //인클루드
         includes:{
             dist:{
