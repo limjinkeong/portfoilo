@@ -1604,13 +1604,11 @@ body {
   float: left;
   margin-left: 50px;
   margin-top: 20px;
-  background: #f00;
 }
 /* line 788, assets\less\style.less */
 .content .bloglist .search {
   width: 1170px;
   height: 40px;
-  background: #f8e;
 }
 /* line 790, assets\less\style.less */
 .content .bloglist .search fieldset {
@@ -1679,48 +1677,52 @@ body {
 .content .bloglist .blogtable {
   width: 1170px;
   height: 950px;
-  background: #ee4;
   margin-top: 20px;
 }
 /* line 821, assets\less\style.less */
-.content .bloglist .blogtable thead {
+.content .bloglist .blogtable table {
+  border-spacing: 0;
+}
+/* line 823, assets\less\style.less */
+.content .bloglist .blogtable table thead {
   display: table-row-group;
   vertical-align: left;
   border-color: inherit;
 }
-/* line 823, assets\less\style.less */
-.content .bloglist .blogtable thead tr {
+/* line 825, assets\less\style.less */
+.content .bloglist .blogtable table thead tr {
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
 }
-/* line 825, assets\less\style.less */
-.content .bloglist .blogtable thead tr th {
+/* line 827, assets\less\style.less */
+.content .bloglist .blogtable table thead tr th {
   text-align: center;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 2px solid #7a7878;
   padding: 30px 20px;
   vertical-align: middle;
   color: #787878;
   font-size: 16px;
+  border-top: 2px solid #7a7878;
 }
-/* line 828, assets\less\style.less */
-.content .bloglist .blogtable thead tr .trleft {
+/* line 830, assets\less\style.less */
+.content .bloglist .blogtable table thead tr .trleft {
   text-align: left;
 }
-/* line 833, assets\less\style.less */
-.content .bloglist .blogtable tbody {
+/* line 835, assets\less\style.less */
+.content .bloglist .blogtable table tbody {
   display: table-row-group;
   vertical-align: left;
   border-color: inherit;
 }
-/* line 835, assets\less\style.less */
-.content .bloglist .blogtable tbody tr {
+/* line 837, assets\less\style.less */
+.content .bloglist .blogtable table tbody tr {
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
 }
-/* line 837, assets\less\style.less */
-.content .bloglist .blogtable tbody tr td {
+/* line 839, assets\less\style.less */
+.content .bloglist .blogtable table tbody tr td {
   text-align: center;
   border-bottom: 1px solid #d1d1d1;
   padding: 30px 20px;
@@ -1728,30 +1730,27 @@ body {
   color: #787878;
   font-size: 14px;
 }
-/* line 840, assets\less\style.less */
-.content .bloglist .blogtable tbody tr .of {
+/* line 842, assets\less\style.less */
+.content .bloglist .blogtable table tbody tr .of {
   width: 740px;
-  background: #f00;
   text-align: left;
 }
-/* line 842, assets\less\style.less */
-.content .bloglist .blogtable tbody tr .of a {
+/* line 844, assets\less\style.less */
+.content .bloglist .blogtable table tbody tr .of a {
   color: #7a7878;
 }
-/* line 846, assets\less\style.less */
-.content .bloglist .blogtable tbody tr .da {
+/* line 848, assets\less\style.less */
+.content .bloglist .blogtable table tbody tr .da {
   width: 95px;
-  background: #ddd;
 }
-/* line 852, assets\less\style.less */
+/* line 855, assets\less\style.less */
 .content .bloglist .paging {
   width: 1170px;
   height: 70px;
-  background: #aa6;
   margin-top: 30px;
   text-align: center;
 }
-/* line 855, assets\less\style.less */
+/* line 858, assets\less\style.less */
 .content .bloglist .paging .page_number .boxprev {
   width: 40px;
   height: 40px;
@@ -1765,7 +1764,7 @@ body {
   border: 1px solid #d1d1d1;
   margin: 0 1px;
 }
-/* line 857, assets\less\style.less */
+/* line 860, assets\less\style.less */
 .content .bloglist .paging .page_number .boxprev:before {
   width: 10px;
   height: 2px;
@@ -1777,7 +1776,7 @@ body {
   display: block;
   transform: rotate(-45deg);
 }
-/* line 860, assets\less\style.less */
+/* line 863, assets\less\style.less */
 .content .bloglist .paging .page_number .boxprev:after {
   width: 10px;
   height: 2px;
@@ -1789,11 +1788,11 @@ body {
   left: 13px;
   transform: rotate(45deg);
 }
-/* line 864, assets\less\style.less */
+/* line 867, assets\less\style.less */
 .content .bloglist .paging .page_number span {
   text-align: center;
 }
-/* line 866, assets\less\style.less */
+/* line 869, assets\less\style.less */
 .content .bloglist .paging .page_number span a {
   display: inline-block;
   width: 40px;
@@ -1806,13 +1805,13 @@ body {
   border: 1px solid #d1d1d1;
   margin: 0 1px;
 }
-/* line 868, assets\less\style.less */
+/* line 871, assets\less\style.less */
 .content .bloglist .paging .page_number span a:first-child {
   color: #fff;
   background: #474747;
   border: 1px solid #474747;
 }
-/* line 873, assets\less\style.less */
+/* line 876, assets\less\style.less */
 .content .bloglist .paging .page_number .boxnext {
   width: 40px;
   height: 40px;
@@ -1826,7 +1825,7 @@ body {
   border: 1px solid #d1d1d1;
   margin: 0 1px;
 }
-/* line 875, assets\less\style.less */
+/* line 878, assets\less\style.less */
 .content .bloglist .paging .page_number .boxnext:before {
   width: 10px;
   height: 2px;
@@ -1838,7 +1837,7 @@ body {
   display: block;
   transform: rotate(45deg);
 }
-/* line 878, assets\less\style.less */
+/* line 881, assets\less\style.less */
 .content .bloglist .paging .page_number .boxnext:after {
   width: 10px;
   height: 2px;
@@ -1850,35 +1849,35 @@ body {
   left: 15px;
   transform: rotate(-45deg);
 }
-/* line 890, assets\less\style.less */
+/* line 893, assets\less\style.less */
 .footer {
   width: 100%;
   height: 200px;
   border-top: 1px solid #80af00;
 }
-/* line 892, assets\less\style.less */
+/* line 895, assets\less\style.less */
 .footer .footwrap {
   width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
-/* line 894, assets\less\style.less */
+/* line 897, assets\less\style.less */
 .footer .footwrap .footlogo {
   width: 201px;
   height: 48px;
   padding-top: 77px;
 }
-/* line 896, assets\less\style.less */
+/* line 899, assets\less\style.less */
 .footer .footwrap .footlogo img {
   width: 201px;
   height: 48px;
 }
-/* line 900, assets\less\style.less */
+/* line 903, assets\less\style.less */
 .footer .footwrap .footinfor {
   width: 530px;
   float: right;
 }
-/* line 902, assets\less\style.less */
+/* line 905, assets\less\style.less */
 .footer .footwrap .footinfor span {
   display: block;
   font-size: 12px;

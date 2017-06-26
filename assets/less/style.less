@@ -784,9 +784,9 @@
 
     // 콘텐츠 전기자동차후기 시작
     .bloglist{
-        width: 1170px; height:1140px; float: left;  margin-left: 50px; margin-top: 20px; background: #f00;
+        width: 1170px; height:1140px; float: left;  margin-left: 50px; margin-top: 20px;
         .search{
-            width: 1170px; height: 40px; background: #f8e;
+            width: 1170px; height: 40px;
             fieldset{
                 border: 0 none; float: right;
                 legend{
@@ -817,40 +817,43 @@
             }
         }
         .blogtable{
-            width: 1170px; height: 950px; background: #ee4; margin-top: 20px;
-            thead{
-                display: table-row-group; vertical-align: left; border-color: inherit;
-                tr{
-                    display: table-row; vertical-align: inherit; border-color: inherit;
-                    th{
-                        text-align: center; border-bottom: 1px solid #d1d1d1; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 16px;
-                    }
-                    .trleft{
-                        text-align: left;
-                    }
-                }
-            }
-            tbody{
-                display: table-row-group; vertical-align: left; border-color: inherit;
-                tr{
-                    display: table-row; vertical-align: inherit; border-color: inherit;
-                    td{
-                        text-align: center; border-bottom: 1px solid #d1d1d1; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 14px;
-                    }
-                    .of{
-                        width: 740px; background: #f00; text-align: left;
-                        a{
-                            color: @subcolor;
+            width: 1170px; height: 950px; margin-top: 20px;
+            table{
+                border-spacing: 0;
+                thead{
+                    display: table-row-group; vertical-align: left; border-color: inherit;
+                    tr{
+                        display: table-row; vertical-align: inherit; border-color: inherit;
+                        th{
+                            text-align: center; border-bottom: 2px solid @subcolor; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 16px; border-top: 2px solid @subcolor;
+                        }
+                        .trleft{
+                            text-align: left;
                         }
                     }
-                    .da{
-                        width: 95px; background: #ddd;
+                }
+                tbody{
+                    display: table-row-group; vertical-align: left; border-color: inherit;
+                    tr{
+                        display: table-row; vertical-align: inherit; border-color: inherit;
+                        td{
+                            text-align: center; border-bottom: 1px solid #d1d1d1; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 14px;
+                        }
+                        .of{
+                            width: 740px; text-align: left;
+                            a{
+                                color: @subcolor;
+                            }
+                        }
+                        .da{
+                            width: 95px;
+                        }
                     }
                 }
             }
         }
         .paging{
-            width: 1170px; height: 70px; background: #aa6; margin-top: 30px; text-align: center;
+            width: 1170px; height: 70px; margin-top: 30px; text-align: center;
             .page_number{
                 .boxprev{
                     width: 40px; height: 40px; background: @fontcolor; display: inline-block; position: relative; top: 16px; line-height: 40px; font-size: 13px; text-align: center; border: 1px solid #d1d1d1; margin: 0 1px;
