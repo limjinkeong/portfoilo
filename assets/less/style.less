@@ -2,7 +2,7 @@
 .top{
     width: 100%; height: 125px; position: relative; border-bottom: 1px solid @maincolor;
     .login{
-        width: 70%; height: 25px; margin: 0 auto;
+        width: 1400px; height: 25px; margin: 0 auto;
         .login_nav{
             width: 140px; height: 25px; float: right;
             a{
@@ -11,13 +11,13 @@
         }
     }
     .menu{
-        width: 70%;; height: 100px; margin: 0 auto;
+        width: 1400px; height: 100px; margin: 0 auto;
         .logo{
             width: 201px; height: 48px; background: url(../../assets/images/logo.png);
             background-color: #fff; float: left; margin-top: 26px;
         }
         .eco{
-            width: 300px; height: 150px; position: absolute; top: 125px; display: none;
+            width: 300px; height: 150px; position: absolute; top: 125px;
             .ecostory{
                 width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px;
                 .ecocar{
@@ -51,7 +51,7 @@
             .depth2{
                 position: relative;
                 .depth2_1{
-                    width: 185px; position: absolute; top:36px; display: none;
+                    width: 185px; position: absolute; top:36px;
                     .depth2_2{
                         width: 180px; height: 150px;display: inline-block; margin: 0 auto;
                         a .bottom_nav{
@@ -63,8 +63,24 @@
         }
     }
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1330px){
+    .login{
+        float: right;
+    }
+    .menu{
+        float: left;
+        .depth1{
+            .depth1_1{
+                position: absolute; left: 300px;
+            }
+        }
+    }
 
+}
+@media screen and (max-width:640px) {
+    .login{
+        display: none;
+    }
 }
 // nav끝
 
@@ -77,9 +93,9 @@
             width: 100%; height: 100%;
         }
         .slideinfor{
-            width: 40%; height: 350px; position: absolute; top: 15%;; left: 21%;
+            width: 400; height: 300px; position: absolute; top: 15%;; left: 21%;
             img{
-                width: 30%; height: 250px;
+                width: 230px; height: 250px;
             }
         }
         .line{
@@ -94,12 +110,12 @@
         .ecobutton{
             width: 150px; height: 40px; position: absolute; top: 380px; left: 450px; color: @fontcolor; border: 1px solid @fontcolor; text-align: center; padding-top: 5px;
         }
-        .slidebutton{
-            width: 70px; height: 30px; position: absolute; top: 600px; left: 920px;
-            .one{
-                width: 15px; height: 15px; background: @maincolor; border-radius: 15px; text-indent: -9999px; border: @maincolor; margin-left: 4px;
-            }
-        }
+        // .slidebutton{
+        //     width: 70px; height: 30px; position: absolute; top: 600px; left: 920px;
+        //     .one{
+        //         width: 15px; height: 15px; background: @maincolor; border-radius: 15px; text-indent: -9999px; border: @maincolor; margin-left: 4px;
+        //     }
+        // }
     }
 }
 // index 슬라이드끝
@@ -228,7 +244,7 @@
         }
     }
     .chargingimg{
-        width: 70%; height: 500px; margin: 0 auto; margin-top: 50px; display: block;
+        width: 200px; height: 500px; margin: 0 auto; margin-top: 50px; display: block;
         img{
             width: 33%; height: 100%;
         }
@@ -250,9 +266,9 @@
             width: 100%; height: 500px;
         }
         .subslideinfor{
-            width: 40%; height: 350px; position: absolute; top: 25%;; left: 21%;
+            width: 400px; height: 300px; position: absolute; top: 25%;; left: 21%;
             img{
-                width: 30%; height: 250px;
+                width: 230px; height: 250px;
             }
         }
         .subline1{
@@ -554,7 +570,6 @@
                 width: 1170px; height: 20px; font-size: 15px; text-align: right;
             }
             .table6_2{
-
                 table{
                     border-spacing: 0;
                     colgroup{
@@ -751,6 +766,123 @@
         }
     }
     //콘텐츠 충전기 신청절차 끝
+
+    //sidedetpth3없는거 시작
+    .side3wrap{
+        width: 1170px; height: 70px; float: left; margin-left: 50px;
+        h1{
+             width: 585px; height: 50px; color: @subcolor; font-size: 36px; float: left;
+        }
+        .sidenav3{
+             width: 585px; height: 50px; float: left;
+             p{
+                font-size: 10px; float: right; padding-top: 35px; color: @subcolor;
+             }
+        }
+    }
+    //sidedetpth3없는거 끝
+
+    // 콘텐츠 전기자동차후기 시작
+    .bloglist{
+        width: 1170px; height:1140px; float: left;  margin-left: 50px; margin-top: 20px; background: #f00;
+        .search{
+            width: 1170px; height: 40px; background: #f8e;
+            fieldset{
+                border: 0 none; float: right;
+                legend{
+                    display: none;
+                }
+                .cell_select{
+                    float: left; height: 40px; text-align: left;
+                    label{
+                        display: none;
+                    }
+                    select{
+                        border: 1px solid #d1d1d1; width: 100%; line-height: 40px; height: 40px; color: #474747; padding-left: 5px; min-width: 100px;
+                    }
+                }
+                .cell_input{
+                    float: left; height: 40px; text-align: left;
+                    label{
+                        display: none;
+                    }
+                    input[type=text]{
+                        line-height: 38px; height: 38px; width: 260px; padding: 0 5px; border: 1px solid #d1d1d1; margin-left: 10px;
+                    }
+                    input[type=button]{
+                        width: 100px; height: 40px; background: #474747 url(../../assets/images/search.png) 15px 50% no-repeat;
+                        cursor: pointer; float: right; color: @fontcolor; margin-left: 10px; font-size: 16px; text-align: left; text-indent: 50px; font-weight: 300; border: 1px solid @subcolor;
+                    }
+                }
+            }
+        }
+        .blogtable{
+            width: 1170px; height: 950px; background: #ee4; margin-top: 20px;
+            thead{
+                display: table-row-group; vertical-align: left; border-color: inherit;
+                tr{
+                    display: table-row; vertical-align: inherit; border-color: inherit;
+                    th{
+                        text-align: center; border-bottom: 1px solid #d1d1d1; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 16px;
+                    }
+                    .trleft{
+                        text-align: left;
+                    }
+                }
+            }
+            tbody{
+                display: table-row-group; vertical-align: left; border-color: inherit;
+                tr{
+                    display: table-row; vertical-align: inherit; border-color: inherit;
+                    td{
+                        text-align: center; border-bottom: 1px solid #d1d1d1; padding: 30px 20px; vertical-align: middle; color: #787878; font-size: 14px;
+                    }
+                    .of{
+                        width: 740px; background: #f00; text-align: left;
+                        a{
+                            color: @subcolor;
+                        }
+                    }
+                    .da{
+                        width: 95px; background: #ddd;
+                    }
+                }
+            }
+        }
+        .paging{
+            width: 1170px; height: 70px; background: #aa6; margin-top: 30px; text-align: center;
+            .page_number{
+                .boxprev{
+                    width: 40px; height: 40px; background: @fontcolor; display: inline-block; position: relative; top: 16px; line-height: 40px; font-size: 13px; text-align: center; border: 1px solid #d1d1d1; margin: 0 1px;
+                    &:before{
+                        width: 10px; height: 2px; content: ""; background: #d1d1d1; position: absolute; top:15px; left:13px; display: block; transform: rotate(-45deg);
+                    }
+                    &:after{
+                        width: 10px; height: 2px; background: #d1d1d1; content: ''; display: block; position: absolute; top: 21px; left: 13px; transform: rotate(45deg);
+                    }
+                }
+                span{
+                    text-align: center;
+                    a{
+                        display: inline-block; width: 40px; height: 40px; line-height: 40px; background: #fff; color: #444; font-size: 13px; text-align: center; border: 1px solid #d1d1d1; margin: 0 1px;
+                        &:first-child{
+                            color: #fff; background: #474747; border: 1px solid #474747;
+                        }
+                    }
+                }
+                .boxnext{
+                    width: 40px; height: 40px; background: @fontcolor; display: inline-block; position: relative; top: 16px; line-height: 40px; font-size: 13px; text-align: center; border: 1px solid #d1d1d1; margin: 0 1px;
+                    &:before{
+                        width: 10px; height: 2px; content: ""; background: #d1d1d1; position: absolute; top:15px; left:15px; display: block; transform: rotate(45deg);
+                    }
+                    &:after{
+                        width: 10px; height: 2px; background: #d1d1d1; content: ''; display: block; position: absolute; top: 21px; left: 15px; transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+    // 콘텐츠 전기자동차후기 끝
 }
 // 컨텐츠 끝
 
