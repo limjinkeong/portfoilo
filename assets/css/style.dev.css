@@ -1850,35 +1850,115 @@ body {
   left: 15px;
   transform: rotate(-45deg);
 }
-/* line 893, assets\less\style.less */
+/* line 890, assets\less\style.less */
+.content .formcontent {
+  width: 1170px;
+  height: 380px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+/* line 892, assets\less\style.less */
+.content .formcontent .write {
+  width: 1170px;
+  height: 40px;
+}
+/* line 894, assets\less\style.less */
+.content .formcontent .write fieldset {
+  border: 0 none;
+  margin-right: 15px;
+}
+/* line 896, assets\less\style.less */
+.content .formcontent .write fieldset legend {
+  display: none;
+}
+/* line 899, assets\less\style.less */
+.content .formcontent .write fieldset .write_select {
+  float: left;
+  height: 40px;
+  text-align: left;
+}
+/* line 901, assets\less\style.less */
+.content .formcontent .write fieldset .write_select label {
+  display: none;
+}
+/* line 904, assets\less\style.less */
+.content .formcontent .write fieldset .write_select select {
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  color: #474747;
+  padding-left: 5px;
+  min-width: 100px;
+}
+/* line 908, assets\less\style.less */
+.content .formcontent .write fieldset .write_input {
+  float: left;
+  height: 40px;
+  text-align: left;
+}
+/* line 910, assets\less\style.less */
+.content .formcontent .write fieldset .write_input label {
+  display: none;
+}
+/* line 913, assets\less\style.less */
+.content .formcontent .write fieldset .write_input input[type=text] {
+  line-height: 38px;
+  height: 38px;
+  width: 1020px;
+  padding: 0 5px;
+  border: 1px solid #d1d1d1;
+  margin-left: 10px;
+}
+/* line 919, assets\less\style.less */
+.content .formcontent .formwrap {
+  width: 1170px;
+  margin-top: 20px;
+}
+/* line 922, assets\less\style.less */
+.content .formcontent .write_click {
+  width: 1170px;
+  background: #f00;
+}
+/* line 924, assets\less\style.less */
+.content .formcontent .write_click input[type=button] {
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-top: 20px;
+  border: 0 none;
+  color: #7a7878;
+}
+/* line 934, assets\less\style.less */
 .footer {
   width: 100%;
   height: 200px;
   border-top: 1px solid #80af00;
 }
-/* line 895, assets\less\style.less */
+/* line 936, assets\less\style.less */
 .footer .footwrap {
   width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
-/* line 897, assets\less\style.less */
+/* line 938, assets\less\style.less */
 .footer .footwrap .footlogo {
   width: 201px;
   height: 48px;
   padding-top: 77px;
 }
-/* line 899, assets\less\style.less */
+/* line 940, assets\less\style.less */
 .footer .footwrap .footlogo img {
   width: 201px;
   height: 48px;
 }
-/* line 903, assets\less\style.less */
+/* line 944, assets\less\style.less */
 .footer .footwrap .footinfor {
   width: 530px;
   float: right;
 }
-/* line 905, assets\less\style.less */
+/* line 946, assets\less\style.less */
 .footer .footwrap .footinfor span {
   display: block;
   font-size: 12px;
