@@ -1614,6 +1614,7 @@ body {
 .content .bloglist .search fieldset {
   border: 0 none;
   float: right;
+  margin-right: 15px;
 }
 /* line 792, assets\less\style.less */
 .content .bloglist .search fieldset legend {
