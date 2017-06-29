@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../assets/css/style.min.css">
     <script type="text/javascript" src="../assets/javascript/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <title>블로그-전기자동차후기</title>
+    <script src="../assets/javascript/ckeditor/ckeditor.js"></script>
+    <title>공지사항-공지사항/문의사항작성</title>
+    <!-- Make sure the path to CKEditor is correct. -->
 </head>
 <body>
     <!-- 헤더시작 -->
@@ -15,9 +17,9 @@
         <div class="top">
             <div class="login">
                 <div class="login_nav">
-                    <a href="">로그인</a>
-                    <a href="">회원가입</a>
-                    <a href="">마이페이지</a>
+                    <a href="sublogin.html">로그인</a>
+                    <a href="sublogin.html">회원가입</a>
+                    <a href="sublogin.html">마이페이지</a>
                 </div>
             </div>
             <div class="menu">
@@ -35,16 +37,16 @@
                 <div class="depth1">
                     <ul class="depth1_1">
                         <li class="depth1_2">
-                            <a href="">
+                            <a href="sub1.html">
                                 <span class="top_nav">전기차소개</span>
                             </a>
                             <div class="depth2">
                                 <ul class="depth2_1">
                                     <li class="depth2_2">
-                                        <a href="">
+                                        <a href="sub1.html">
                                             <span class="bottom_nav">전기차개요</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub3.html">
                                             <span class="bottom_nav">전기차효율성</span>
                                         </a>
                                     </li>
@@ -52,16 +54,16 @@
                             </div>
                         </li>
                         <li class="depth1_2">
-                            <a href="">
+                            <a href="sub24.html">
                                 <span class="top_nav">충전소안내</span>
                             </a>
                             <div class="depth2">
                                 <ul class="depth2_1">
                                     <li class="depth2_2">
-                                        <a href="">
+                                        <a href="sub24.html">
                                             <span class="bottom_nav">충전소안내 및 요금</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub25.html">
                                             <span class="bottom_nav">충전소 찾기</span>
                                         </a>
                                     </li>
@@ -69,16 +71,16 @@
                             </div>
                         </li>
                         <li class="depth1_2">
-                            <a href="">
+                            <a href="sub6.html">
                                 <span class="top_nav">차량/충전기</span>
                             </a>
                             <div class="depth2">
                                 <ul class="depth2_1">
                                     <li class="depth2_2">
-                                        <a href="">
+                                        <a href="sub6.html">
                                             <span class="bottom_nav">전기자동차</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub9.html">
                                             <span class="bottom_nav">충전기</span>
                                         </a>
                                     </li>
@@ -86,16 +88,16 @@
                             </div>
                         </li>
                         <li class="depth1_2">
-                            <a href="">
+                            <a href="sub12.html">
                                 <span class="top_nav">블로그</span>
                             </a>
                             <div class="depth2">
                                 <ul class="depth2_1">
                                     <li class="depth2_2">
-                                        <a href="">
+                                        <a href="sub12.html">
                                             <span class="bottom_nav">전기자동차 후기</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub13.html">
                                             <span class="bottom_nav">충전기 후기</span>
                                         </a>
                                     </li>
@@ -103,19 +105,19 @@
                             </div>
                         </li>
                         <li class="depth1_2">
-                            <a href="">
+                            <a href="sub14.html">
                                 <span class="top_nav">공지사항</span>
                             </a>
                             <div class="depth2">
                                 <ul class="depth2_1">
                                     <li class="depth2_2">
-                                        <a href="">
+                                        <a href="sub14.html">
                                             <span class="bottom_nav">공지사항</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub15.html">
                                             <span class="bottom_nav">문의사항</span>
                                         </a>
-                                        <a href="">
+                                        <a href="sub16.html">
                                             <span class="bottom_nav">마이페이지</span>
                                         </a>
                                     </li>
@@ -138,7 +140,7 @@
                     <img src="../assets/images/main2.png" alt="">
                 </div>
                 <span class="subline1">전기자동차 정보를</span>
-                <span class="subline2">공유해요!</span>
+                <span class="subline2">확인해볼까요?</span>
             </li>
         </ul>
     </div>
@@ -153,24 +155,56 @@
                         <div class="side1box">
                             <div class="topline"></div>
                         </div>
-                        <a href="">블로그</a>
+                        <a href="sub14.html">공지사항</a>
                     </li>
-                    <li class="side2"><a href="">전기자동차 후기</a></li>
-                    <li class="side2"><a href="">전기차충전기 후기</a></li>
+                    <li class="side2"><a href="sub14.html">공지사항</a></li>
+                    <li class="side2"><a href="sub15.html">문의사항</a></li>
+                    <li class="side2"><a href="sub16.html">마이페이지</a></li>
                 </ul>
             </div>
         <!-- subone 사이드바1 전기차소개 끝 -->
         <!-- subone 사이드바2 전기차소개 시작 -->
             <div class="side3wrap">
-                <h1>전기자동차 후기</h1>
-                <span class="sidenav3">
-                    <p>home > 블로그 > 전기자동차 후기</p>
-                </span>
+                <h1>게시글작성</h1>
             </div>
         <!-- subone 사이드바2 전기차소개 끝 -->
-        <!-- 콘텐츠 전기자동차후기 시작 -->
-            
-        <!-- 콘텐츠 전기자동차후기 끝 -->
+        <!-- 콘텐츠 공지사항/문의사항 시작 -->
+            <div class="formcontent">
+                <div class="write">
+                    <fieldset>
+                        <legend>게시글 작성 종류 및 제목</legend>
+                        <div class="write_select">
+                            <label for="">검색조건 선택</label>
+                            <select class="writeselect" name="">
+                                <option value="title">공지사항</option>
+                                <option value="content">문의사항</option>
+                                <option value="content">블로그-전기차</option>
+                                <option value="content">블로그-충전기</option>
+                            </select>
+                        </div>
+                        <div class="write_input">
+                            <label for="">제목</label>
+                            <input type="text" name="" value="제목을 입력해주세요.">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="formwrap">
+                    <form>
+                        <textarea name="editor1" id="editor1" rows="10" cols="80">
+                            전기자동차 사이트에 오신걸 환영합니다.
+                        </textarea>
+                        <script>
+                            // Replace the <textarea id="editor1"> with a CKEditor
+                            // instance, using default configuration.
+                            CKEDITOR.replace( 'editor1' );
+                        </script>
+                    </form>
+                </div>
+                <div class="write_click">
+                    <input type="button" name="" value="확인">
+                </div>
+            </div>
+        <!-- 콘텐츠 공지사항/문의사항 끝 -->
     </div>
     <!-- 컨텐츠 끝 -->
     <!-- footer시작 -->
