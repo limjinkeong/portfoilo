@@ -1,6 +1,6 @@
 // nav시작
 .top{
-    width: 100%; height: 125px; position: relative; border-bottom: 1px solid @maincolor;
+    width: 100%; height: 125px; border-bottom: 1px solid @maincolor; position: relative;
     .login{
         width: 1400px; height: 25px; margin: 0 auto;
         .login_nav{
@@ -331,6 +331,12 @@
                 a{
                     color: @fontcolor;
                 }
+            }
+        }
+        .side4{
+            width: 1170px; height: 75px; float: left; margin-top: 20px;
+            p{
+                color: @subcolor; padding: 6px 20px;
             }
         }
     }
@@ -981,25 +987,81 @@
 
     //콘텐츠 로그인 시작
     .loginwrap{
-        width: 1170px; height:1200px; float: left;  margin-left: 50px; margin-top: 20px; background: #f00;
+        width: 1170px; height:700px; float: left;  margin-left: 50px; margin-top: 20px;
         .logininfor{
-            width: 1150px; height: 50px; background: #dd9; font-size: 20px; padding-left: 20px; color: @subcolor;
+            width: 1150px; height: 70px; font-size: 20px; padding-left: 20px; color: @subcolor;
         }
         .login_form{
-            width: 1170px; height: 250px; background: #aa7; margin-top: 30px;
+            padding: 100px 0; width: 560px; margin: 0 auto; position: relative; padding-left: 155px;
             form{
-                .idform{
+                input{
+                    border: 1px solid #e5e5e5; background-color: #fafafa; padding: 4px 5px; font-size: 16px; font-family: 'NanumGothicBlod'; width: 280px;
+                }
+                .input_cont{
                     p{
                         line-height: 18px;
-                        input{
-                            border: 1px solid #e5e5e5; background-color: #fafafa; padding: 4px 5px; font-size: 16px; font-family: 'NanumGothicBlod'; width: 280px;
+                    }
+                    .mt10{
+                        margin-top: 10px;
+                    }
+                    .btnlogin{
+                        position: absolute; left: 480px; top: 60px;
+                        a{
+                            background: @maincolor; height: 100px; width: 100px; display: block; float: left; text-align: center; font-size: 16px; line-height: 100px; color: @fontcolor; border-radius: 7px; margin-top: 25px; margin-right: 10px;
                         }
                     }
                 }
             }
         }
+        .login_check{
+            background: #fafafa; padding: 20px; overflow: hidden; border: 1px solid #d5d5d5; margin-top: 20px;
+            div{
+                width: 35%; float: left; font-size: 14px; margin-left: 10%;
+                p{
+                    display: inline-block; color: @subcolor;
+                }
+                .btn1{
+                     padding: 10px 20px; background: @maincolor; color: @fontcolor; font-size: 16px; display: inline-block; margin-left: 20px;
+                }
+            }
+        }
     }
     //콘텐츠 로그인 끝
+
+    //콘텐츠 충전소안내 시작
+    .chargingstation{
+        width: 1170px; height:700px; float: left;  margin-left: 50px; margin-top: 20px; background: #fd0;
+        .searchwrap{
+            padding: 20px 0px; margin-bottom: 30px; text-align: center; background: #daeaf0; border-top: 1px solid @maincolor; border-bottom: 1px solid @maincolor;
+            strong{
+                padding-right: 20px; color: @subcolor; font-size: 15px; line-height: 40px;
+            }
+            span{
+                select{
+                    display: inline-block; width: 298px; height: 38px; margin-right: 8px; border: 1px solid #c8c8c8; font-size: 14px; color: @subcolor;
+                }
+            }
+            input[type=button]{
+                width: 150px; height: 38px; background: @maincolor; border: 0 none; color: @fontcolor; font-size: 12px;
+            }
+        }
+        table{
+            width: 100%; font-size: 14px;
+            tbody{
+                display: table-row-group; vertical-align: middle; border-color: inherit;
+                tr{
+                    th{
+                        height: 40px; background: @maincolor; color: @fontcolor; border: 1px solid @subcolor; font-weight: normal;
+                    }
+                    td{
+                        padding: 11px 16px; border: 1px solid #ccdce2; color: @subcolor; text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    //콘텐츠 충전소안내 끝
+
 }
 // 컨텐츠 끝
 
