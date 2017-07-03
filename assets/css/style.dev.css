@@ -2138,7 +2138,6 @@ body {
   float: left;
   margin-left: 50px;
   margin-top: 20px;
-  background: #fd0;
 }
 /* line 1034, assets\less\style.less */
 .content .chargingstation .searchwrap {
@@ -2179,59 +2178,152 @@ body {
 .content .chargingstation table {
   width: 100%;
   font-size: 14px;
+  border-collapse: collapse;
 }
 /* line 1050, assets\less\style.less */
+.content .chargingstation table colgroup {
+  display: table-column-group;
+}
+/* line 1052, assets\less\style.less */
+.content .chargingstation table colgroup col {
+  width: 25%;
+}
+/* line 1056, assets\less\style.less */
 .content .chargingstation table tbody {
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
-/* line 1053, assets\less\style.less */
+/* line 1058, assets\less\style.less */
+.content .chargingstation table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+/* line 1060, assets\less\style.less */
 .content .chargingstation table tbody tr th {
-  height: 40px;
+  height: 55px;
   background: #80af00;
   color: #ffffff;
   border: 1px solid #7a7878;
   font-weight: normal;
+  display: table-row;
+  border-color: inherit;
+  display: table-cell;
+  vertical-align: inherit;
 }
-/* line 1056, assets\less\style.less */
+/* line 1065, assets\less\style.less */
 .content .chargingstation table tbody tr td {
   padding: 11px 16px;
   border: 1px solid #ccdce2;
   color: #7a7878;
   text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
 }
 /* line 1069, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+}
+/* line 1071, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+/* line 1073, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+/* line 1075, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable tbody tr th {
+  background: #80af00;
+  color: #ffffff;
+  font-weight: normal;
+  display: table-cell;
+  vertical-align: inherit;
+}
+/* line 1076, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable tbody tr th:first-child {
+  border-left: 0;
+}
+/* line 1079, assets\less\style.less */
+.content .chargingstation table tbody tr .subtable tbody tr td {
+  padding: 11px 16px;
+  border: 1px solid #ccdce2;
+  color: #666;
+  text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
+}
+/* line 1088, assets\less\style.less */
+.content .chargingstation .charginginfor {
+  width: 1170px;
+  height: 200px;
+  margin-top: 50px;
+}
+/* line 1090, assets\less\style.less */
+.content .chargingstation .charginginfor span {
+  color: #7a7878;
+  font-size: 24px;
+  padding-left: 10px;
+}
+/* line 1093, assets\less\style.less */
+.content .chargingstation .charginginfor ul {
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 1095, assets\less\style.less */
+.content .chargingstation .charginginfor ul li {
+  width: 32.5%;
+  height: 100%;
+  border: 3px solid #80af00;
+  display: inline-block;
+  text-align: center;
+}
+/* line 1097, assets\less\style.less */
+.content .chargingstation .charginginfor ul li a {
+  display: block;
+  margin-top: 35px;
+  color: #7a7878;
+}
+/* line 1110, assets\less\style.less */
 .footer {
   width: 100%;
   height: 200px;
   border-top: 1px solid #80af00;
 }
-/* line 1071, assets\less\style.less */
+/* line 1112, assets\less\style.less */
 .footer .footwrap {
   width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
-/* line 1073, assets\less\style.less */
+/* line 1114, assets\less\style.less */
 .footer .footwrap .footlogo {
   width: 201px;
   height: 48px;
   display: inline-block;
   margin-top: 77px;
 }
-/* line 1075, assets\less\style.less */
+/* line 1116, assets\less\style.less */
 .footer .footwrap .footlogo img {
   width: 201px;
   height: 48px;
 }
-/* line 1079, assets\less\style.less */
+/* line 1120, assets\less\style.less */
 .footer .footwrap .footinfor {
   width: 530px;
   float: right;
   margin-top: 77px;
 }
-/* line 1081, assets\less\style.less */
+/* line 1122, assets\less\style.less */
 .footer .footwrap .footinfor span {
   display: block;
   font-size: 12px;
