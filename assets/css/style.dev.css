@@ -2293,37 +2293,46 @@ body {
   margin-top: 35px;
   color: #7a7878;
 }
-/* line 1110, assets\less\style.less */
+/* line 1107, assets\less\style.less */
+.content .chargingmap {
+  width: 1170px;
+  height: 700px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  background: #f00;
+}
+/* line 1117, assets\less\style.less */
 .footer {
   width: 100%;
   height: 200px;
   border-top: 1px solid #80af00;
 }
-/* line 1112, assets\less\style.less */
+/* line 1119, assets\less\style.less */
 .footer .footwrap {
   width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
-/* line 1114, assets\less\style.less */
+/* line 1121, assets\less\style.less */
 .footer .footwrap .footlogo {
   width: 201px;
   height: 48px;
   display: inline-block;
   margin-top: 77px;
 }
-/* line 1116, assets\less\style.less */
+/* line 1123, assets\less\style.less */
 .footer .footwrap .footlogo img {
   width: 201px;
   height: 48px;
 }
-/* line 1120, assets\less\style.less */
+/* line 1127, assets\less\style.less */
 .footer .footwrap .footinfor {
   width: 530px;
   float: right;
   margin-top: 77px;
 }
-/* line 1122, assets\less\style.less */
+/* line 1129, assets\less\style.less */
 .footer .footwrap .footinfor span {
   display: block;
   font-size: 12px;
