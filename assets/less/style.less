@@ -181,6 +181,12 @@
         width: 1400px; height: 400px; margin: 0 auto; margin-top: 50px;
         .car1{
             width: 460px; height: 180px; float: left; margin-left: 5px; margin-top: 100px; position: relative;
+            &:hover .carbox{
+                background: @subcolor;
+            }
+            &:hover .carname{
+                color: @fontcolor;
+            }
             .carbox{
                 width: 300px; height: 180px; border: 7px solid @maincolor; display: block;
             }
@@ -198,7 +204,10 @@
     .footcar{
         width: 500px; height: 50px; display: inline-block; border-bottom: 5px solid @maincolor; margin-top: 50px; margin-left: 1100px; margin-bottom: 50px;
         span{
-            font-size: 24px; color: @subcolor; float: right;
+            float: right;
+            a{
+                font-size: 24px; color: @subcolor;
+            }
         }
     }
 }
@@ -279,7 +288,10 @@
     .footcharging{
         width: 500px; height: 50px; display: inline-block; border-bottom: 5px solid @maincolor; margin-top: 50px; margin-left: 1100px; margin-bottom: 50px;
         span{
-            font-size: 24px; color: @subcolor; float: right;
+            float: right;
+            a{
+                font-size: 24px; color: @subcolor;
+            }
         }
     }
 }
@@ -317,7 +329,7 @@
         width: 180px; height: 1325px; float: left;
         ul{
             .side1{
-                width: 180px; height: 70px; background: @maincolor; color: @fontcolor; font-size: 24px; text-align: center;
+                width: 180px; height: 70px; background: @maincolor; color: @fontcolor; font-size: 24px; text-align: center; border-bottom: 3px solid @subcolor;
                 a{
                     color: @fontcolor;
                 }
