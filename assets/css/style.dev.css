@@ -422,7 +422,6 @@ body {
 .subsidywrap .footcar {
   width: 500px;
   height: 50px;
-  display: inline-block;
   border-bottom: 5px solid #80af00;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -706,7 +705,6 @@ body {
 .chargingwrap .footcharging {
   width: 500px;
   height: 50px;
-  display: inline-block;
   border-bottom: 5px solid #80af00;
   margin-top: 50px;
   margin-bottom: 50px;
