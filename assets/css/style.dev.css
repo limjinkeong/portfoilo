@@ -62,6 +62,7 @@ body {
   height: 150px;
   position: absolute;
   top: 125px;
+  display: none;
 }
 /* line 20, assets\less\style.less */
 .top .menu .eco .ecostory {
@@ -139,6 +140,7 @@ body {
   width: 185px;
   position: absolute;
   top: 36px;
+  display: none;
 }
 /* line 54, assets\less\style.less */
 .top .menu .depth1 .depth2 .depth2_1 .depth2_2 {
