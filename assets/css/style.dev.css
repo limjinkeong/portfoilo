@@ -196,15 +196,15 @@ body {
   .slidewrap .main1 img {
     width: 100%;
   }
-  /* line 91, assets\less\style.less */
-  .slidewrap .sideinfor {
+  /* line 90, assets\less\style.less */
+  .slidewrap .main1 .slideinfor {
     width: 300px;
     height: 200px;
     position: absolute;
     top: 150px;
   }
-  /* line 93, assets\less\style.less */
-  .slidewrap .sideinfor img {
+  /* line 92, assets\less\style.less */
+  .slidewrap .main1 .slideinfor img {
     width: 150px;
     height: 200px;
   }
