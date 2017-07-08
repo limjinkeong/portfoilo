@@ -1,6 +1,9 @@
 // nav시작
 .top{
     width: 100%; height: 125px; border-bottom: 1px solid @maincolor; position: relative;
+    .depthback{
+        width: 100%; height: 200px; background-color: #fff; position: absolute; top:126px; display: inline-block;
+    }
     .login{
         width: 1400px; height: 25px; margin: 0 auto;
         .login_nav{
@@ -18,7 +21,7 @@
         .eco{
             width: 300px; height: 150px; position: absolute; top: 125px;
             .ecostory{
-                width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px;
+                width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px; z-index: 100;
                 .ecocar{
                     display: block; text-align: center; padding-top: 7px; font-weight: bold; font-size: 20px; color: @fontcolor;
                 }
@@ -27,7 +30,7 @@
                 }
             }
             .ecoinfor{
-                width: 130px; height: 70px;  position: absolute; top: 30px; right: 0;
+                width: 130px; height: 70px;  position: absolute; top: 30px; right: 0; z-index: 100;
                 .in{
                     display: block; font-size: 11px; padding-top: 17px; color: @subcolor;
                 }
@@ -39,24 +42,24 @@
         .depth1{
             position: relative;
             .depth1_1{
-                width: 950px; position: absolute; top: 40px; right: 0;
+                width: 950px; position: absolute; top: 51px; right: 0;
                 .depth1_2{
                     width: 180px; display: inline-block;
                     a .top_nav{
                         display: block; text-align: center;
                     }
-                }
-            }
-            .depth2{
-                position: relative;
-                    .depth2_1{
-                    width: 185px; position: absolute; top:36px;
-                    .depth2_2{
-                        width: 180px; height: 150px;display: inline-block; margin: 0 auto;
-                        a .bottom_nav{
-                            display: block; text-align: center; margin-top: 15px; color: @subcolor;
-                            &:hover{
-                              border-bottom: 1px solid @maincolor;
+                    .depth2{
+                        position: relative;
+                            .depth2_1{
+                            width: 185px; position: absolute; top:36px;
+                            .depth2_2{
+                                width: 180px; height: 150px;display: inline-block; margin: 0 auto;
+                                a .bottom_nav{
+                                    display: block; text-align: center; margin-top: 15px; color: @subcolor;
+                                    &:hover{
+                                      border-bottom: 1px solid @maincolor;
+                                    }
+                                }
                             }
                         }
                     }
@@ -73,13 +76,47 @@
         float: left;
         .depth1{
             .depth1_1{
-                position: absolute; left: 300px;
+                position: absolute; left: 260px;
             }
         }
     }
+    .slidewrap{
+      width: 100%; overflow: hidden;
+      .main1{
+            width: 100%;
+        img{
+            width: 100%;
+      }
+    }
+    .sideinfor{
+        width: 300px; height: 200px; position: absolute; top: 150px;
+        img{
+          width: 150px; height: 200px;
+        }
+    }
+  }
 }
-@media screen and (max-width:640px) {
 
+@media screen and (max-width:940px) {
+
+}
+
+@media screen and (max-width:640px) {
+    html{
+      overflow-x: hidden;
+    }
+    header{
+      position:static;
+    }
+    .login{
+      display: none;
+    }
+    .menu{
+      display: none;
+      .depth1{
+        position:absolute; right:0; height:100%; width:180px; background-color:#FFF; z-index: 100;
+      }
+    }
 }
 // nav끝
 
@@ -984,7 +1021,7 @@
                         display: none;
                     }
                     input[type=text]{
-                        line-height: 38px; height: 38px; width: 1020px; padding: 0 5px; border: 1px solid #d1d1d1; margin-left: 10px;
+                        line-height: 38px; height: 38px; width: 1020px;  border: 1px solid #d1d1d1; margin-left: 10px;
                     }
                 }
             }
