@@ -44,7 +44,6 @@ module.exports = function(grunt) {
                 }
             },
 
-
             dev: {
                 options: {
                     paths: ['daeboassets/css'],
@@ -96,24 +95,24 @@ module.exports = function(grunt) {
         },
         //daebo includes
 
-        includes: {
-            files: ['daeboassets/less/*.less'],
-            tasks: ['includes'],
-            options: {
-                spawn: false,
-            }
-        },
-        includes: {
-            dist: {
-                cwd:'daebohtml',
-                src:['*.html'],
-                dest:'daebo_dist',
-                options: {
-                    flatten:true,
-                    includePath:'html'
-                }
-            }
-        }
+        // includes: {
+        //     files: ['daeboassets/less/*.less'],
+        //     tasks: ['includes'],
+        //     options: {
+        //         spawn: false,
+        //     }
+        // },
+        // includes: {
+        //     dist: {
+        //         cwd:'daebohtml',
+        //         src:['*.html'],
+        //         dest:'daebo_dist',
+        //         options: {
+        //             flatten:true,
+        //             includePath:'html'
+        //         }
+        //     }
+        // }
 
     });
 
