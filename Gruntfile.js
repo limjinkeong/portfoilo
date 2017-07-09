@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 port: 9000
             }
         },
-        //레스
+        //eco 레스
         less: {
             product: {
                 options: {
@@ -32,7 +32,30 @@ module.exports = function(grunt) {
                 }
             }
         },
-        //와치
+        //daebo less
+        less: {
+            product: {
+                options: {
+                    paths: ['daeboassets/css'],
+                    compress:true
+                },
+                files: {
+                    'daeboassets/css/daebostyle.min.css': 'daeboassets/less/daeboimport.less'
+                }
+            },
+
+
+            dev: {
+                options: {
+                    paths: ['daeboassets/css'],
+                    dumpLineNumbers:"comments"
+                },
+                files: {
+                    'daeboassets/css/daebostyle.dev.css': 'daeboassets/less/daeboimport.less'
+                }
+            }
+        },
+        //eco 와치
         watch: {
             scripts: {
                 files: ['assets/less/*.less'],
@@ -42,6 +65,17 @@ module.exports = function(grunt) {
                 }
             }
         },
+        //daebo watch
+        watch: {
+            scripts: {
+                files: ['daeboassets/less/*.less'],
+                tasks: ['less'],
+                options: {
+                    spawn: false,
+                }
+            }
+        },
+        //eco 인클루드
         includes: {
             files: ['assets/less/*.less'],
             tasks: ['includes'],
@@ -49,18 +83,38 @@ module.exports = function(grunt) {
                 spawn: false,
             }
         },
-        //인클루드
-        includes:{
+        includes: {
             dist:{
                 cwd:'html',
                 src:['*.html'],
                 dest:'eco_dist',
-                options:{
+                options: {
+                    flatten:true,
+                    includePath:'html'
+                }
+            }
+        },
+        //daebo includes
+
+        includes: {
+            files: ['daeboassets/less/*.less'],
+            tasks: ['includes'],
+            options: {
+                spawn: false,
+            }
+        },
+        includes: {
+            dist: {
+                cwd:'daebohtml',
+                src:['*.html'],
+                dest:'daebo_dist',
+                options: {
                     flatten:true,
                     includePath:'html'
                 }
             }
         }
+
     });
 
     // Load the plugin that provides the "uglify" task.
