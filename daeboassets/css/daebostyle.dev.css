@@ -1,3 +1,22 @@
+@import "http://fonts.googleapis.com/earlyaccess/notosanskr.css";
+/* line 2, daeboassets\less\daebocommon.less */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* line 3, daeboassets\less\daebocommon.less */
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 4, daeboassets\less\daebocommon.less */
+ul li {
+  list-style: none;
+}
+/* line 5, daeboassets\less\daebocommon.less */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 /* line 1, daeboassets\less\daebostyle.less */
 h1 {
   color: #f00;

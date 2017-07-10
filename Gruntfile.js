@@ -12,70 +12,58 @@ module.exports = function(grunt) {
 
         //eco less
 
-        less: {
-            product: {
-                options: {
-                    paths: ['assets/css'],
-                    compress:true
-                },
-                files: {
-                    'assets/css/style.min.css': 'assets/less/import.less'
-                }
-            },
-
-
-            dev: {
-                options: {
-                    paths: ['assets/css'],
-                    dumpLineNumbers:"comments"
-                },
-                files: {
-                    'assets/css/style.dev.css': 'assets/less/import.less'
-                }
-            }
-        },
-
-        //daebo less
-
         // less: {
         //     product: {
         //         options: {
-        //             paths: ['daeboassets/css'],
+        //             paths: ['assets/css'],
         //             compress:true
         //         },
         //         files: {
-        //             'daeboassets/css/daebostyle.min.css': 'daeboassets/less/daeboimport.less'
+        //             'assets/css/style.min.css': 'assets/less/import.less'
         //         }
         //     },
         //
+        //
         //     dev: {
         //         options: {
-        //             paths: ['daeboassets/css'],
+        //             paths: ['assets/css'],
         //             dumpLineNumbers:"comments"
         //         },
         //         files: {
-        //             'daeboassets/css/daebostyle.dev.css': 'daeboassets/less/daeboimport.less'
+        //             'assets/css/style.dev.css': 'assets/less/import.less'
         //         }
         //     }
         // },
 
-        //eco watch
+        //daebo less
 
-        watch: {
-            scripts: {
-                files: ['assets/less/*.less'],
-                tasks: ['less'],
+        less: {
+            product: {
                 options: {
-                    spawn: false,
+                    paths: ['daeboassets/css'],
+                    compress:true
+                },
+                files: {
+                    'daeboassets/css/daebostyle.min.css': 'daeboassets/less/daeboimport.less'
+                }
+            },
+
+            dev: {
+                options: {
+                    paths: ['daeboassets/css'],
+                    dumpLineNumbers:"comments"
+                },
+                files: {
+                    'daeboassets/css/daebostyle.dev.css': 'daeboassets/less/daeboimport.less'
                 }
             }
         },
 
-        //daebo watch
+        //eco watch
 
         // watch: {
         //     scripts: {
-        //         files: ['daeboassets/less/*.less'],
+        //         files: ['assets/less/*.less'],
         //         tasks: ['less'],
         //         options: {
         //             spawn: false,
@@ -83,46 +71,59 @@ module.exports = function(grunt) {
         //     }
         // },
 
-        //eco includes
+        //daebo watch
 
-        includes: {
-            files: ['assets/less/*.less'],
-            tasks: ['includes'],
-            options: {
-                spawn: false,
-            }
-        },
-        includes: {
-            dist:{
-                cwd:'html',
-                src:['*.html'],
-                dest:'eco_dist',
+        watch: {
+            scripts: {
+                files: ['daeboassets/less/*.less'],
+                tasks: ['less'],
                 options: {
-                    flatten:true,
-                    includePath:'html'
+                    spawn: false,
                 }
             }
         },
-        //daebo includes
+
+        //eco includes
 
         // includes: {
-        //     files: ['daeboassets/less/*.less'],
+        //     files: ['assets/less/*.less'],
         //     tasks: ['includes'],
         //     options: {
         //         spawn: false,
         //     }
         // },
         // includes: {
-        //     dist: {
-        //         cwd:'daebohtml',
+        //     dist:{
+        //         cwd:'html',
         //         src:['*.html'],
-        //         dest:'daebo_dist',
+        //         dest:'eco_dist',
         //         options: {
         //             flatten:true,
         //             includePath:'html'
         //         }
         //     }
-        // }
+        // },
+
+        //daebo includes
+
+        includes: {
+            files: ['daeboassets/less/*.less'],
+            tasks: ['includes'],
+            options: {
+                spawn: false,
+            }
+        },
+        includes: {
+            dist: {
+                cwd:'daebohtml',
+                src:['*.html'],
+                dest:'daebo_dist',
+                options: {
+                    flatten:true,
+                    includePath:'html'
+                }
+            }
+        }
 
     });
 
