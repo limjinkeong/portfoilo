@@ -2,7 +2,7 @@
 .top{
     width: 100%; height: 125px; border-bottom: 1px solid @maincolor; position: relative;
     .depthback{
-        width: 100%; height: 200px; background-color: #fff; position: absolute; top:126px; display: inline-block;
+        width: 100%; height: 200px; background-color: #fff; position: absolute; top:126px; display: inline-block; display: none;
     }
     .login{
         width: 1400px; height: 25px; margin: 0 auto;
@@ -19,7 +19,7 @@
             width: 201px; height: 48px; background-color: #fff; float: left; margin-top: 26px;
         }
         .eco{
-            width: 300px; height: 150px; position: absolute; top: 125px;
+            width: 300px; height: 150px; position: absolute; top: 125px; display: none;
             .ecostory{
                 width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px; z-index: 100;
                 .ecocar{
@@ -53,7 +53,7 @@
                             .depth2_1{
                             width: 185px; position: absolute; top:36px;
                             .depth2_2{
-                                width: 180px; height: 150px;display: inline-block; margin: 0 auto;
+                                width: 180px; height: 150px;display: inline-block; margin: 0 auto; display: none;
                                 a .bottom_nav{
                                     display: block; text-align: center; margin-top: 15px; color: @subcolor;
                                     &:hover{
@@ -87,11 +87,20 @@
         img{
             width: 100%;
         }
-        .slideinfor{
-            width: 300px; height: 200px; position: absolute; top: 150px; left: 200px;
-            img{
-              width: 150px; height: 200px; background: #ff0;
-            }
+    }
+  }
+  .effectwrap{
+      width: 100%; height: 100%;
+    .scrollone{
+        width: 1000px; height: 100px; margin-left: 100px;
+        h1{
+            font-size: 16px; color: @maincolor; text-align: left;
+        }
+        h2{
+            font-size: 10px; color: @subcolor; text-align: left;
+        }
+        img{
+            margin-left: 300px;
         }
     }
   }
@@ -129,13 +138,14 @@
             height: 100%;
         }
         .slideinfor{
-            width: 400px; height: 300px; position: absolute; top: 320px; left: 400px;
+            width: 500px; height: 300px; position: absolute; top:320px; left: 400px;
             img{
                 width: 230px; height: 250px;
             }
         }
         .line{
-            position: absolute; top: 350px; left: 460px; display: block; font-weight: bold; font-size: 48px; color: @fontcolor;
+            position: absolute; top: 350px; left: 460px;
+            display: block; font-weight: bold; font-size: 48px; color: @fontcolor;
         }
         .line2{
             position: absolute; top: 410px; left: 460px; display: block; font-size: 48px; color: @fontcolor;
