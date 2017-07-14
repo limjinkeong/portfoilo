@@ -160,7 +160,7 @@
         .car1{
             width: 460px; height: 180px; float: left; margin-left: 5px; margin-top: 100px; position: relative;
             &:hover .carbox{
-                background: @subcolor;
+                background: #f0f;
             }
             &:hover .carname{
                 color: @fontcolor;
@@ -265,27 +265,30 @@
         }
     }
     .chargingimg{
-        width: 1200px; height: 500px; margin: 0 auto; margin-top: 50px;
+        width: 1260px; height: 500px; margin: 0 auto; margin-top: 50px;
         .aa{
-            width: 400px; height: 500px; overflow:hidden; position: relative; display: block; float: left;
-                ::after{
-                  content:""; position:absolute; left:0; top:0; right:0; bottom:0; background-color:rgba(204,255,204,0.5); opacity: 0; transition:1s;
+            position: relative; width: 400px; height: 500px; float: left; overflow: hidden; margin-left: 20px; display: block;
+                &:after{
+                  content: ""; position: absolute;
+                  left: 0; top: 0; right: 0; bottom: 0;
+                  background-color:rgba(204,255,204,0.5);
+                  opacity: 0; transition: 1s; z-index: 100;
                 }
-                &:hover ::after{
-                  opacity: 1;
+                &:hover:after{
+                    opacity: 1;
                 }
                 img{
                     width: 400px; height: 500px;
                 }
             }
             .bb{
-              color: @fontcolor; position: relative; top:-270px; left: 150px; font-size: 24px; background: @maincolor;
+              color: @fontcolor; position: relative; top:-270px; left: 170px; font-size: 24px; background: @maincolor;
             }
             .cc{
-              color: @fontcolor; position: relative; top:-270px; left: 430px; font-size: 24px; background: @maincolor;
+              color: @fontcolor; position: relative; top:-270px; left: 450px; font-size: 24px; background: @maincolor;
             }
             .dd{
-              color: @fontcolor; position: relative; top:-270px; left: 710px; font-size: 24px; background: @maincolor;
+              color: @fontcolor; position: relative; top:-270px; left: 770px; font-size: 24px; background: @maincolor;
             }
         }
     .footcharging{
@@ -1157,7 +1160,7 @@
 
     //콘텐츠 충전소지도 시작
     .chargingmap{
-        width: 1170px; height:700px; float: left;  margin-left: 50px; margin-top: 20px; background: #f00;
+        width: 1170px; height:700px; float: left;  margin-left: 50px; margin-top: 20px;
     }
 
     //콘텐츠 충전소지도 끝
@@ -1186,7 +1189,7 @@
 }
 //footer끝
 
-//반응형
+//반응형 top부분
 @media screen and (max-width:1330px){
     .login{
         float: right;
@@ -1212,6 +1215,25 @@
               width: 150px; height: 180px;
             }
         }
+        .line{
+            position: absolute; top: 260px; left: 260px;
+            display: block; font-weight: bold; font-size: 28px; color: @fontcolor;
+        }
+        .line2{
+            position: absolute; top: 300px; left: 260px; display: block; font-size: 28px; color: @fontcolor;
+        }
+        .line3{
+            position: absolute; top: 340px; left: 260px; display: block; font-size: 28px; color: @fontcolor;
+        }
+        .ecobutton{
+            width: 80px; height: 30px; position: absolute; top: 430px; left: 230px; border: 2px solid @fontcolor; text-align: center; padding-top: 10px; font-size: 12px;
+            a{
+               color: @fontcolor;
+            }
+            &:hover{
+              background: @maincolor;
+            }
+        }
     }
   }
   .effectwrap{
@@ -1230,9 +1252,19 @@
     }
   }
 }
-
-@media screen and (max-width:940px) {
-
+//반응형 top부분
+@media screen and (max-width:1200px) {
+    .login{
+        display: none;
+    }
+    .menu{
+        float: left;
+        .depth1{
+            .depth1_1{
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:640px) {
