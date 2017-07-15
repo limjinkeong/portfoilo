@@ -2941,69 +2941,20 @@ body {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 1512, assets\less\style.less */
-  .effectwrap {
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-  }
   /* line 1514, assets\less\style.less */
-  .effectwrap .scrollone {
-    width: 1400px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  /* line 1516, assets\less\style.less */
   .effectwrap .scrollone h1 {
-    text-align: center;
-    color: #80af00;
-    font-size: 48px;
+    margin-right: 520px;
   }
-  /* line 1519, assets\less\style.less */
+  /* line 1517, assets\less\style.less */
   .effectwrap .scrollone h2 {
-    text-align: center;
-    color: #7a7878;
-    font-size: 24px;
-    font-weight: normal;
+    margin-right: 510px;
   }
-  /* line 1522, assets\less\style.less */
+  /* line 1520, assets\less\style.less */
   .effectwrap .scrollone img {
-    width: 15px;
-    height: 33px;
-    margin-left: 680px;
-    margin-top: 50px;
+    margin-left: 430px;
   }
-  /* line 1526, assets\less\style.less */
-  .effectwrap .iconwrap {
-    width: 1400px;
-    height: 400px;
-    margin: 0 auto;
-  }
-  /* line 1528, assets\less\style.less */
+  /* line 1525, assets\less\style.less */
   .effectwrap .iconwrap .energy {
-    width: 250px;
-    height: 200px;
-    float: left;
-    margin-left: 160px;
-    margin-top: 80px;
-  }
-  /* line 1530, assets\less\style.less */
-  .effectwrap .iconwrap .energy img {
-    padding-left: 90px;
-    padding-top: 20px;
-  }
-  /* line 1533, assets\less\style.less */
-  .effectwrap .iconwrap .energy .energyinfor {
-    width: 250px;
-    height: 130px;
-    margin-top: 20px;
-  }
-  /* line 1535, assets\less\style.less */
-  .effectwrap .iconwrap .energy .energyinfor span {
-    display: block;
-    text-align: center;
-    color: #7a7878;
-    font-size: 12px;
-    padding-top: 5px;
+    margin-left: 10px;
   }
 }
