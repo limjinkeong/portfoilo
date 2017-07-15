@@ -1189,7 +1189,7 @@
 }
 //footer끝
 
-//반응형 top부분
+//반응형 top부분 시작(1330px)
 @media screen and (max-width:1330px){
     .login{
         float: right;
@@ -1236,51 +1236,308 @@
         }
     }
   }
-  .effectwrap{
-      width: 100%; height: 100%;
-    .scrollone{
-        width: 1000px; height: 100px; margin-left: 100px;
-        h1{
-            font-size: 16px; color: @maincolor; text-align: left;
-        }
-        h2{
-            font-size: 10px; color: @subcolor; text-align: left;
-        }
-        img{
-            margin-left: 300px;
-        }
-    }
-  }
 }
-//반응형 top부분
+//반응형 top부분 끝(1330px)
+
+//반응형 top부분 시작(1200px)
 @media screen and (max-width:1200px) {
-    .login{
+    .top{
+      .depthback{
+          position: absolute; left: -9999px;
+      }
+      .login{
         display: none;
+      }
+      .menu{
+          float: left;
+          .logo{
+            margin-top: 40px;
+          }
+          .depth1{
+              .depth1_1{
+                  display: none;
+              }
+          }
+          .eco{
+            display: none;
+          }
+      }
     }
-    .menu{
-        float: left;
-        .depth1{
-            .depth1_1{
-                display: none;
+
+    .slidewrap{
+      width: 100%; overflow: hidden;
+      .main1{
+            width: 100%;
+        img{
+            width: 100%;
+        }
+        .slideinfor{
+            position: absolute; top: 180px; left: 150px;
+            img{
+              width: 150px; height: 180px;
+            }
+        }
+        .line{
+            position: absolute; top: 210px; left: 220px;
+            display: block; font-weight: bold; font-size: 28px; color: @fontcolor;
+        }
+        .line2{
+            position: absolute; top: 250px; left: 220px; display: block; font-size: 28px; color: @fontcolor;
+        }
+        .line3{
+            position: absolute; top: 290px; left: 220px; display: block; font-size: 28px; color: @fontcolor;
+        }
+        .ecobutton{
+            width: 80px; height: 30px; position: absolute; top: 380px; left: 200px; border: 2px solid @fontcolor; text-align: center; padding-top: 10px; font-size: 12px;
+            a{
+               color: @fontcolor;
+            }
+            &:hover{
+              background: @maincolor;
             }
         }
     }
 }
-
-@media screen and (max-width:640px) {
-    html{
-      overflow-x: hidden;
-    }
-    header{
-      position:static;
-    }
+}
+//반응형 top부분 끝(1200px)
+//반응형 top부분 시작(950px)
+@media screen and (max-width:950px) {
     .login{
       display: none;
     }
-    .menu{
-      display: none;
-      .depth1{
-        position:absolute; right:0; height:100%; width:180px; background-color:#FFF; z-index: 100;
-      }
+    .slidewrap{
+      width: 100%; overflow: hidden;
+      .main1{
+            width: 100%;
+        img{
+            width: 100%;
+        }
+        .ecobutton{
+            width: 80px; height: 30px; position: absolute; top: 320px; left: 600px; border: 2px solid @fontcolor; text-align: center; padding-top: 10px; font-size: 12px;
+            a{
+               color: @fontcolor;
+            }
+            &:hover{
+              background: @maincolor;
+            }
+        }
+    }
     }
 }
+//반응형 top부분 끝(950px)
+//반응형 top부분 시작(760px)
+@media screen and (max-width:760px) {
+  .slidewrap{
+    width: 100%; overflow: hidden;
+    .main1{
+          width: 100%;
+      img{
+          width: 100%;
+      }
+      .slideinfor{
+          position: absolute; top: 150px; left: 150px;
+          img{
+            width: 150px; height: 180px;
+          }
+      }
+      .line{
+          position: absolute; top: 180px; left: 220px;
+          display: block; font-weight: bold; font-size: 28px; color: @fontcolor;
+      }
+      .line2{
+          position: absolute; top: 220px; left: 220px; display: block; font-size: 28px; color: @fontcolor;
+      }
+      .line3{
+          position: absolute; top: 260px; left: 220px; display: block; font-size: 28px; color: @fontcolor;
+      }
+      .ecobutton{
+          width: 80px; height: 30px; position: absolute; top: 280px; left: 500px; border: 2px solid @fontcolor; text-align: center; padding-top: 10px; font-size: 12px;
+          a{
+             color: @fontcolor;
+          }
+          &:hover{
+            background: @maincolor;
+          }
+      }
+  }
+}
+}
+//반응형 top부분 끝(760px)
+//반응형 top부분 시작(640px)
+@media screen and (max-width:640px) {
+  .slidewrap{
+    width: 100%; overflow: hidden;
+    .main1{
+          width: 100%;
+      img{
+          width: 100%;
+      }
+      .slideinfor{
+          display: none;
+      }
+      .line{
+          display: none;
+      }
+      .line2{
+          display: none;
+      }
+      .line3{
+        display: none;
+      }
+      .ecobutton{
+          width: 80px; height: 30px; position: absolute; top: 210px; left: 100px; border: 2px solid @fontcolor; text-align: center; padding-top: 10px; font-size: 12px;
+          a{
+             color: @fontcolor;
+          }
+          &:hover{
+            background: @maincolor;
+          }
+      }
+  }
+}
+}
+//반응형 top부분 끝(640px)
+
+// 반응형  effect부분 시작(1330px)
+@media screen and (max-width:1330px){
+  .effectwrap{
+      .scrollone{
+          h1{
+              margin-right: 125px;
+          }
+          h2{
+              margin-right: 120px;
+          }
+          img{
+              margin-left: 632px;
+          }
+      }
+      .iconwrap{
+          .energy{
+              margin-left: 135px;
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(1330px)
+// 반응형  effect부분 시작(1250px)
+@media screen and (max-width:1250px){
+  .effectwrap{
+      .scrollone{
+          h1{
+              margin-right: 170px;
+          }
+          h2{
+              margin-right: 160px;
+          }
+          img{
+              margin-left: 612px;
+          }
+      }
+      .iconwrap{
+          .energy{
+              margin-left: 120px;
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(1250px)
+// 반응형  effect부분 시작(1100px)
+@media screen and (max-width:1100px){
+  .effectwrap{
+      .scrollone{
+          h1{
+              margin-right: 350px;
+          }
+          h2{
+              margin-right: 340px;
+          }
+          img{
+              margin-left: 502px;
+          }
+      }
+      .iconwrap{
+          .energy{
+              margin-left: 70px;
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(1100px)
+// 반응형  effect부분 시작(940px)
+@media screen and (max-width:940px){
+  .effectwrap{
+      .scrollone{
+          h1{
+              margin-right: 420px;
+          }
+          h2{
+              margin-right: 410px;
+          }
+          img{
+              margin-left: 480px;
+          }
+      }
+      .iconwrap{
+          .energy{
+              margin-left: 40px;
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(940px)
+// 반응형  effect부분 시작(850px)
+@media screen and (max-width:850px){
+  .effectwrap{
+      .scrollone{
+          h1{
+              margin-right: 520px;
+          }
+          h2{
+              margin-right: 510px;
+          }
+          img{
+              margin-left: 430px;
+          }
+      }
+      .iconwrap{
+          .energy{
+              margin-left: 10px;
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(770px)
+@media screen and (max-width:770px){
+  .effectwrap{
+      width: 100%; height: 100%; margin-top: 30px;
+      .scrollone{
+          width: 1400px; height: 200px; margin: 0 auto;
+          h1{
+              text-align: center; color: @maincolor; font-size: 48px;
+          }
+          h2{
+              text-align: center; color: @subcolor; font-size: 24px; font-weight: normal;
+          }
+          img{
+              width: 15px; height: 33px; margin-left: 680px; margin-top: 50px;
+          }
+      }
+      .iconwrap{
+          width: 1400px; height: 400px; margin: 0 auto;
+          .energy{
+              width: 250px; height: 200px; float: left; margin-left: 160px; margin-top: 80px;
+              img{
+                  padding-left: 90px; padding-top: 20px;
+              }
+              .energyinfor{
+                  width: 250px; height: 130px; margin-top: 20px;
+                  span{
+                      display: block; text-align: center;color: @subcolor; font-size: 12px; padding-top: 5px;
+                  }
+              }
+          }
+      }
+  }
+}
+// 반응형  effect부분 끝(770px)
