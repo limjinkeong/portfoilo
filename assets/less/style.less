@@ -2,7 +2,7 @@
 .top{
     width: 100%; height: 125px; border-bottom: 1px solid @maincolor; position: relative;
     .depthback{
-        width: 100%; height: 200px; background-color: #fff; position: absolute; top:126px; display: inline-block;
+        width: 100%; height: 200px; background-color: #fff; position: absolute; top:126px; display: inline-block; display: none;
     }
     .login{
         width: 1400px; height: 25px; margin: 0 auto;
@@ -19,7 +19,7 @@
             width: 201px; height: 48px; background-color: #fff; float: left; margin-top: 26px;
         }
         .eco{
-            width: 300px; height: 150px; position: absolute; top: 125px;
+            width: 300px; height: 150px; position: absolute; top: 125px; display: none;
             .ecostory{
                 width: 130px; height: 70px; background: @maincolor; position: absolute; top: 30px; left: 25px; z-index: 100;
                 .ecocar{
@@ -53,7 +53,7 @@
                             .depth2_1{
                             width: 185px; position: absolute; top:36px;
                             .depth2_2{
-                                width: 180px; height: 150px;display: inline-block; margin: 0 auto;
+                                width: 180px; height: 150px;display: inline-block; margin: 0 auto; display: none;
                                 a .bottom_nav{
                                     display: block; text-align: center; margin-top: 15px; color: @subcolor;
                                     &:hover{
@@ -1491,13 +1491,13 @@
   .effectwrap{
       .scrollone{
           h1{
-              margin-right: 520px;
+              margin-right: 490px;
           }
           h2{
-              margin-right: 510px;
+              margin-right: 480px;
           }
           img{
-              margin-left: 430px;
+              margin-left: 450px;
           }
       }
       .iconwrap{
@@ -1512,20 +1512,66 @@
   .effectwrap{
       .scrollone{
           h1{
-              margin-right: 520px;
+              margin-right: 560px;
           }
           h2{
-              margin-right: 510px;
+              margin-right: 550px;
           }
           img{
-              margin-left: 430px;
+              margin-left: 400px;
           }
       }
       .iconwrap{
           .energy{
-              margin-left: 10px;
+              margin-left: 0px;
           }
       }
   }
 }
 // 반응형  effect부분 끝(770px)
+
+//electric car subsidy시작(1380px)
+@media screen and (max-width:1380px){
+    .subsidywrap{
+        .scrolltwo{
+            width: 1400px; height: 200px; margin: 0 auto;
+            h1{
+                text-align: center; color: @maincolor; font-size: 48px; padding-top: 20px;
+            }
+            h2{
+                text-align: center; color: @subcolor; font-size: 24px; font-weight: normal;
+            }
+            img{
+                width: 15px; height: 33px; margin-left: 680px; margin-top: 50px;
+            }
+        }
+        .carwrap{
+            width: 1400px; height: 400px; margin: 0 auto; margin-top: 50px;
+            .car1{
+                width: 460px; height: 180px; float: left; margin-left: 5px; margin-top: 100px; position: relative;
+                .carbox{
+                    width: 300px; height: 180px; border: 7px solid @maincolor; display: block;
+                }
+                .carname{
+                     width: 120px; height: 30px; font-size: 36px; color: @subcolor; display: block; position: absolute; left: 50px; top: 63px; text-align: center;
+                }
+                .carimg{
+                    width: 300px; height: 180px; display: block; position: absolute; top: 0; right: 0;
+                    img{
+                        width: 300px; height: 180px;
+                    }
+                }
+            }
+        }
+        .footcar{
+            width: 500px; height: 50px; border-bottom: 5px solid @maincolor; margin-top: 50px; margin-bottom: 50px; float: right; margin-right: 150px;
+            span{
+                float: right;
+                a{
+                    font-size: 24px; color: @subcolor;
+                }
+            }
+        }
+    }
+}
+//electric car subsidy끝(1380px)

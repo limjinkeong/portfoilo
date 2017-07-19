@@ -1,8 +1,13 @@
-$(function(){
-    $('.menu>.depth1>.depth1_1>.depth1_2>.top_nav').hover(function(e){
-            $('.depth1_2>.depht2>.depth2_1>.depth2_2').find('.bottom_nav').stop().slideDown();
-        },
-        function(){
-            $('.depth1_2>.depht2>.depth2_1>.depth2_2').find('.bottom_nav').stop().slideUp();
-        })
-})
+$(function () {
+          $('.menu .depth1 .depth1_1 .depth1_2').hover(
+              function () {
+                $('.depthback').stop().slideDown();
+                $('.eco').stop().slideDown();
+                $('.depth2_2').stop().slideDown();
+              },
+              function () {
+                $('.depthback').stop().slideUp();
+                $('.eco').stop().slideUp();
+                $('.depth2_2').stop().slideUp();
+              })
+      })

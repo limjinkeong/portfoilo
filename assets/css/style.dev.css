@@ -32,6 +32,7 @@ body {
   position: absolute;
   top: 126px;
   display: inline-block;
+  display: none;
 }
 /* line 7, assets\less\style.less */
 .top .login {
@@ -71,6 +72,7 @@ body {
   height: 150px;
   position: absolute;
   top: 125px;
+  display: none;
 }
 /* line 23, assets\less\style.less */
 .top .menu .eco .ecostory {
@@ -157,6 +159,7 @@ body {
   height: 150px;
   display: inline-block;
   margin: 0 auto;
+  display: none;
 }
 /* line 57, assets\less\style.less */
 .top .menu .depth1 .depth1_1 .depth1_2 .depth2 .depth2_1 .depth2_2 a .bottom_nav {
@@ -2925,15 +2928,15 @@ body {
 @media screen and (max-width: 850px) {
   /* line 1493, assets\less\style.less */
   .effectwrap .scrollone h1 {
-    margin-right: 520px;
+    margin-right: 490px;
   }
   /* line 1496, assets\less\style.less */
   .effectwrap .scrollone h2 {
-    margin-right: 510px;
+    margin-right: 480px;
   }
   /* line 1499, assets\less\style.less */
   .effectwrap .scrollone img {
-    margin-left: 430px;
+    margin-left: 450px;
   }
   /* line 1504, assets\less\style.less */
   .effectwrap .iconwrap .energy {
@@ -2943,18 +2946,115 @@ body {
 @media screen and (max-width: 770px) {
   /* line 1514, assets\less\style.less */
   .effectwrap .scrollone h1 {
-    margin-right: 520px;
+    margin-right: 560px;
   }
   /* line 1517, assets\less\style.less */
   .effectwrap .scrollone h2 {
-    margin-right: 510px;
+    margin-right: 550px;
   }
   /* line 1520, assets\less\style.less */
   .effectwrap .scrollone img {
-    margin-left: 430px;
+    margin-left: 400px;
   }
   /* line 1525, assets\less\style.less */
   .effectwrap .iconwrap .energy {
-    margin-left: 10px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  /* line 1536, assets\less\style.less */
+  .subsidywrap .scrolltwo {
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  /* line 1538, assets\less\style.less */
+  .subsidywrap .scrolltwo h1 {
+    text-align: center;
+    color: #80af00;
+    font-size: 48px;
+    padding-top: 20px;
+  }
+  /* line 1541, assets\less\style.less */
+  .subsidywrap .scrolltwo h2 {
+    text-align: center;
+    color: #7a7878;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  /* line 1544, assets\less\style.less */
+  .subsidywrap .scrolltwo img {
+    width: 15px;
+    height: 33px;
+    margin-left: 680px;
+    margin-top: 50px;
+  }
+  /* line 1548, assets\less\style.less */
+  .subsidywrap .carwrap {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  /* line 1550, assets\less\style.less */
+  .subsidywrap .carwrap .car1 {
+    width: 460px;
+    height: 180px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 100px;
+    position: relative;
+  }
+  /* line 1552, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carbox {
+    width: 300px;
+    height: 180px;
+    border: 7px solid #80af00;
+    display: block;
+  }
+  /* line 1555, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carname {
+    width: 120px;
+    height: 30px;
+    font-size: 36px;
+    color: #7a7878;
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 63px;
+    text-align: center;
+  }
+  /* line 1558, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg {
+    width: 300px;
+    height: 180px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* line 1560, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg img {
+    width: 300px;
+    height: 180px;
+  }
+  /* line 1566, assets\less\style.less */
+  .subsidywrap .footcar {
+    width: 500px;
+    height: 50px;
+    border-bottom: 5px solid #80af00;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: right;
+    margin-right: 150px;
+  }
+  /* line 1568, assets\less\style.less */
+  .subsidywrap .footcar span {
+    float: right;
+  }
+  /* line 1570, assets\less\style.less */
+  .subsidywrap .footcar span a {
+    font-size: 24px;
+    color: #7a7878;
   }
 }
