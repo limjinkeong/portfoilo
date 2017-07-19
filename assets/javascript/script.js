@@ -10,4 +10,4 @@ $(function () {
                 $('.eco').stop().slideUp();
                 $('.depth2_2').stop().slideUp();
               })
-      })
+})

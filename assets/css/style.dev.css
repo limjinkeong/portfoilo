@@ -349,7 +349,7 @@ body {
 /* line 158, assets\less\style.less */
 .subsidywrap .carwrap {
   width: 1400px;
-  height: 400px;
+  height: 650px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -2963,98 +2963,87 @@ body {
 }
 @media screen and (max-width: 1380px) {
   /* line 1536, assets\less\style.less */
-  .subsidywrap .scrolltwo {
-    width: 1400px;
-    height: 200px;
-    margin: 0 auto;
+  .subsidywrap .carwrap {
+    width: 1200px;
   }
   /* line 1538, assets\less\style.less */
-  .subsidywrap .scrolltwo h1 {
-    text-align: center;
-    color: #80af00;
-    font-size: 48px;
-    padding-top: 20px;
-  }
-  /* line 1541, assets\less\style.less */
-  .subsidywrap .scrolltwo h2 {
-    text-align: center;
-    color: #7a7878;
-    font-size: 24px;
-    font-weight: normal;
-  }
-  /* line 1544, assets\less\style.less */
-  .subsidywrap .scrolltwo img {
-    width: 15px;
-    height: 33px;
-    margin-left: 680px;
-    margin-top: 50px;
-  }
-  /* line 1548, assets\less\style.less */
-  .subsidywrap .carwrap {
-    width: 1400px;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  /* line 1550, assets\less\style.less */
   .subsidywrap .carwrap .car1 {
-    width: 460px;
-    height: 180px;
-    float: left;
-    margin-left: 5px;
-    margin-top: 100px;
-    position: relative;
+    width: 395px;
   }
-  /* line 1552, assets\less\style.less */
-  .subsidywrap .carwrap .car1 .carbox {
-    width: 300px;
-    height: 180px;
-    border: 7px solid #80af00;
-    display: block;
-  }
-  /* line 1555, assets\less\style.less */
-  .subsidywrap .carwrap .car1 .carname {
-    width: 120px;
-    height: 30px;
-    font-size: 36px;
-    color: #7a7878;
-    display: block;
-    position: absolute;
-    left: 50px;
-    top: 63px;
-    text-align: center;
-  }
-  /* line 1558, assets\less\style.less */
+  /* line 1540, assets\less\style.less */
   .subsidywrap .carwrap .car1 .carimg {
-    width: 300px;
-    height: 180px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 250px;
   }
-  /* line 1560, assets\less\style.less */
+  /* line 1542, assets\less\style.less */
   .subsidywrap .carwrap .car1 .carimg img {
-    width: 300px;
-    height: 180px;
+    width: 250px;
   }
-  /* line 1566, assets\less\style.less */
-  .subsidywrap .footcar {
-    width: 500px;
-    height: 50px;
-    border-bottom: 5px solid #80af00;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    float: right;
-    margin-right: 150px;
+}
+@media screen and (max-width: 1260px) {
+  /* line 1555, assets\less\style.less */
+  .subsidywrap .scrolltwo {
+    width: 1000px;
+  }
+  /* line 1557, assets\less\style.less */
+  .subsidywrap .scrolltwo img {
+    margin-left: 500px;
+  }
+  /* line 1561, assets\less\style.less */
+  .subsidywrap .carwrap {
+    width: 1000px;
+  }
+  /* line 1563, assets\less\style.less */
+  .subsidywrap .carwrap .car1 {
+    width: 328px;
+  }
+  /* line 1565, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carbox {
+    width: 245px;
   }
   /* line 1568, assets\less\style.less */
-  .subsidywrap .footcar span {
-    float: right;
-  }
-  /* line 1570, assets\less\style.less */
-  .subsidywrap .footcar span a {
+  .subsidywrap .carwrap .car1 .carname {
     font-size: 24px;
-    color: #7a7878;
+    top: 77px;
+    left: 30px;
+  }
+  /* line 1571, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg {
+    width: 245px;
+    right: -22px;
+  }
+  /* line 1573, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg img {
+    width: 245px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  /* line 1586, assets\less\style.less */
+  .subsidywrap .carwrap {
+    width: 1000px;
+  }
+  /* line 1588, assets\less\style.less */
+  .subsidywrap .carwrap .car1 {
+    width: 328px;
+  }
+  /* line 1590, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carbox {
+    width: 245px;
+  }
+  /* line 1593, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carname {
+    font-size: 24px;
+    top: 77px;
+    left: 30px;
+  }
+  /* line 1596, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg {
+    width: 245px;
+    right: -22px;
+  }
+  /* line 1598, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg img {
+    width: 245px;
+    height: 180px;
   }
 }
