@@ -3079,3 +3079,27 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 785px) {
+  /* line 1639, assets\less\style.less */
+  .subsidywrap .carwrap {
+    width: 800px;
+  }
+  /* line 1641, assets\less\style.less */
+  .subsidywrap .carwrap .car1 {
+    width: 260px;
+  }
+  /* line 1643, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carbox {
+    width: 215px;
+  }
+  /* line 1646, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carname {
+    font-size: 24px;
+    top: 77px;
+    left: 50px;
+  }
+  /* line 1649, assets\less\style.less */
+  .subsidywrap .carwrap .car1 .carimg {
+    display: none;
+  }
+}
