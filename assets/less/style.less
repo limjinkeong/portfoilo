@@ -160,7 +160,7 @@
         .car1{
             width: 460px; height: 180px; float: left; margin-left: 5px; margin-top: 100px; position: relative;
             &:hover .carbox{
-                background: #f0f;
+                background: #08FF7B;
             }
             &:hover .carname{
                 color: @fontcolor;
@@ -1583,6 +1583,12 @@
 //electric car subsidy시작(1010px)
 @media screen and (max-width:1010px){
     .subsidywrap{
+        .scrolltwo{
+            width: 900px;
+            img{
+                margin-left: 400px;
+            }
+        }
         .carwrap{
             width: 1000px;
             .car1{
@@ -1604,3 +1610,25 @@
     }
 }
 //electric car subsidy끝(1010px)
+
+//electric car subsidy시작(950px)
+@media screen and (max-width:950px){
+    .subsidywrap{
+        .carwrap{
+            width: 800px;
+            .car1{
+                width: 260px;
+                .carbox{
+                    width: 215px;
+                }
+                .carname{
+                    font-size: 24px; top: 77px; left: 50px;
+                }
+                .carimg{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+//electric car subsidy끝(950px)
