@@ -3503,7 +3503,7 @@ body {
     font-size: 9px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 400px) {
   /* line 1966, assets\less\style.less */
   .footer .footwrap .footinfor {
     width: 300px;
